@@ -1,0 +1,13 @@
+@mixin behave-vertical {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  @mixin behave-horizontal {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+  }
+  

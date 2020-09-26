@@ -1,0 +1,161 @@
+@import 'variables';
+@import 'mixins';
+
+@media screen and (min-width: 1024px) {
+    header {
+        display: flex;
+        width: 100%;
+        height: 7.5rem;
+        padding: 0;
+        img {
+            margin: unset;
+        }
+        .burger-btn {
+            display: none;
+        }
+        .close-btn {
+            display: none;
+        }
+        .logo {
+            width: 5rem;
+            height: 5rem;
+            margin-left: 6%;
+        }
+        nav {
+            display: flex;
+            width: 43%;
+            ul {
+                display: flex;
+                flex-flow: row wrap;
+                align-self: flex-end;
+                width: 100%;
+                li {
+                    display: flex;
+                    align-self: center;
+                    margin: 0 4%;
+                    &:first-child {
+                        margin-left: unset;
+                    }
+                    &:last-child {
+                        margin-right: unset;
+                    }
+                    a {
+                        text-align: justify;
+                        font-size: 1rem;
+                        font-family: $montserrat;
+                        color: $mainColor;
+                        text-decoration: none;
+                        font-weight: bold;
+                        text-transform: uppercase;
+                    }
+                    
+                    .mas{
+                        width: 54px;
+                        height: 54px;
+                        background-image: url(../img/button-crear-gifo.svg);
+                        &:hover{
+                            background-image: url(../img/CTA-crear-gifo-hover.svg);
+                        }
+                        &:active{
+                            background-image: url(../img/CTA-crear-gifo-active.svg);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    main {
+        align-items: center;
+        .home {
+            width: 54%;
+            padding-top: 5%;
+            h1 {
+                font-size: 2.9rem;
+                line-height: 4.16rem;
+                text-align: center;
+                span{
+                    font-size: 2.9rem;
+                }
+            }
+            img {
+                max-width: 33.3rem;
+                margin-top: 3%;
+            }
+            .search-bar {
+                width: 46rem;
+                max-height: 4.16rem;
+                display: flex;
+                flex-flow: row nowrap;
+                align-items: center;
+                justify-content: space-between;
+                .search {
+                    text-align: left;
+                    width: 100%;
+                    float: none;
+                    &::placeholder {
+                        color: $gris-desktop;
+                    }
+                }
+            }
+            .trends {
+                h3 {
+                    font-size: 1.5rem;
+                }
+                p {
+                    font-size: 1.3rem;
+                }
+            }
+        }
+        .trending {
+            width: 100%;
+            padding: 6% 0 9% 0;
+            h3 {
+                font-size: 2rem;
+            }
+            .trendApi {
+                font-size: 1.5rem;
+                line-height: 1.75rem;
+                padding: 1% 0 2% 0;
+            }
+            .carrusel {
+                width: 100%;
+                margin-top: 1%;
+                .gif-home {
+                    width: 357px;
+                    height: 275px;
+                    margin: 0 1%;
+                    &:nth-child(2), &:nth-child(3) {
+                        display: initial;
+                    }
+                }
+                .flecha{
+                    display: initial;
+                }
+            }
+        }
+    }
+
+    footer {
+        width: 100%;
+        height: 9.5rem;
+        @include behave-horizontal;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0% 11%;
+
+        .share {
+            align-items: flex-start;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            margin: unset;
+
+            .social a{
+                &:first-child{
+                    margin-left: 1.6rem;
+                }
+            }
+        }
+    }
+}
