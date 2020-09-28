@@ -110,7 +110,8 @@ main {
         float: right;
         margin-top: 0; }
     main .home .trends {
-      margin: 10% 20%; }
+      margin: 10% 20%;
+      text-transform: capitalize; }
       main .home .trends h3 {
         font-size: 1.3rem;
         color: #572EE5;
