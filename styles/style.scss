@@ -126,13 +126,13 @@ main {
                 font-size: 2rem;
             }
         }
-        .search-bar{
+        .searchbarCtn{
             border: 1px solid $mainColor;
             border-radius: 21rem;
             padding: 1rem 1.25rem 1rem 2rem;
             width: 90%;
             align-self: center;
-            .search{
+            .searchInput{
                 border: none;
                 float: left;
                 font-family: $roboto;

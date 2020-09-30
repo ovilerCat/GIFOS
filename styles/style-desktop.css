@@ -61,18 +61,18 @@
       main .home img {
         max-width: 33.3rem;
         margin-top: 3%; }
-      main .home .search-bar {
+      main .home .searchCtn {
         width: 46rem;
         max-height: 4.16rem;
         display: flex;
         flex-flow: row nowrap;
         align-items: center;
         justify-content: space-between; }
-        main .home .search-bar .search {
+        main .home .searchCtn .searchInput {
           text-align: left;
           width: 100%;
           float: none; }
-          main .home .search-bar .search::placeholder {
+          main .home .searchCtn .searchInput::placeholder {
             color: #9CAFC3; }
       main .home .trends h3 {
         font-size: 1.5rem; }
