@@ -74,10 +74,12 @@
           float: none; }
           main .home .searchCtn .searchInput::placeholder {
             color: #9CAFC3; }
-      main .home .trends h3 {
-        font-size: 1.5rem; }
-      main .home .trends p {
-        font-size: 1.3rem; }
+      main .home .trends {
+        margin-bottom: 2rem; }
+        main .home .trends h3 {
+          font-size: 1.5rem; }
+        main .home .trends p {
+          font-size: 1.3rem; }
     main .trending {
       width: 100%;
       padding: 6% 0 9% 0; }
