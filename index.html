@@ -39,14 +39,25 @@
         <section class="home">
             <h1>Inspírate, busca, guarda, y crea los mejores <span>GIFOS</span></h1>
             <img class="illus" src="img/ilustra_header.svg" alt="Felicidad">
+
             <div class="searchbarCtn" id="searchbarCtn"> 
-                <input class="searchInput" id="searchInput" type="search" placeholder="Busca GIFOS y más">
-                <img src="img/icon-search.svg" alt="Buscar">
-                <label for="searchInput"></label>
+
+                <div class="busqueda" id="busqueda">
+                    <img src="img/icon-search-active.svg" alt="Buscar" id="lupa-gris" class="lupa-gris">
+                    <input class="searchInput" id="searchInput" type="search" placeholder="Busca GIFOS y más">
+                    <img src="img/icon-search.svg" alt="Buscar">
+                    <img src="img/close.svg" alt="Cerrar" id="cerrar" class="cerrar">
+                    <label for="searchInput"></label>
+
+                </div>
+
             </div>
+
             <article class="trends" id="trends">
                 <h3>Trending:</h3>
             </article>
+
+
         </section>
 
    <!-- giphy busqueda -->
@@ -54,7 +65,10 @@
             <div class="resultadoGifos" id="resultadoGifos">
                 <div class="resultadoFinal" id="resultadoFinal"></div>
             </div>
+            <button class="verMas" id="verMas">Ver Más</button>
         </section>
+
+
 
         <!-- Segunda sección -->
         <section class="trending">
